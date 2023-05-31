@@ -1,0 +1,43 @@
+name: Endpoints
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/user
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Listagem de usuários'
+      description: 'Retorna todos os usuários cadastrados'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: "[\r\n    {\r\n        \"id\": 1,\r\n        \"name\": \"Prof. Douglas Williamson\",\r\n        \"email\": \"ulittle@example.org\",\r\n        \"profile_photo_url\": \"https://ui-avatars.com/api/?name=P+D+W&color=7F9CF5&background=EBF4FF\"\r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"name\": \"Tess Goodwin\",\r\n        \"email\": \"bella.tromp@example.org\",\r\n        \"profile_photo_url\": \"https://ui-avatars.com/api/?name=T+G&color=7F9CF5&background=EBF4FF\"\r\n    }\r\n]"
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer akDb8EhZ366g5v14fPdeacV'
+    controller: null
+    method: null
+    route: null
+    custom: []
